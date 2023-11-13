@@ -1,26 +1,22 @@
 class Circulo:
     pi=3.14
-    
- 
-
     def __init__(self, radio):
         self.radio=radio
 
     def circunferencia(self):
-        return 2*self.pi*self.radio
+        print("La circunferencia es: ",2*self.pi*self.radio) 
 
-    def area(self):
-        return self.pi*(self.radio**2) 
+    def area(self): 
+        print("El area es: ",self.pi*(self.radio**2) )
     
     def perimetro(self):
-        return 2*self.pi*self.radio
+        print("El perimetro es: ", 2*self.pi*self.radio)
 
-circunferencia_circulo=Circulo(12)
-print(circunferencia_circulo.circunferencia())
-area_circulo=Circulo(5)
-print(area_circulo.area())
-perimetro_circulo=Circulo(5)
-print(perimetro_circulo.perimetro())
+circulo=float(input("Escribe el valor del radio: "))
+circulo1=Circulo(1) #Se crea el objeto circulo1 de la clase circulo
+circulo1.circunferencia()
+circulo1.area()
+circulo1.perimetro()
 
 
 
