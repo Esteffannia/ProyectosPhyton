@@ -5,13 +5,14 @@ class Triangulo:
         self.lado=lado
 
     def area(self): 
-        print("El area es: ",self.base*((self.radio*self.altura)/2) )
-    
+        print("El area es: ",(self.base*self.altura)/2)
+
     def perimetro(self):
-        print("El perimetro es: ", 2*self.lado+self.base)
+        print("El perimetro para un triangulo isoceles es:", self.lado*2)
+        #print("El perimetro para un triangulo equilatero es:", self.lado*3)
+        #print("El perimetro para un triangulo escaleno es: ", self.lado*self.lado*self.lado)
 
 triangulo1=Triangulo(3,5)
 area=triangulo1.area()
-perimetro=triangulo1.perimetro()
-print("El area es: ",area)
-print("El perimetro es: ",perimetro)
+tri1=Triangulo(2) 
+perimetro=tri1.perimetro()
